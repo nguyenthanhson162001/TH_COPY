@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 txtName.setText(snapshot.getValue().toString());
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 

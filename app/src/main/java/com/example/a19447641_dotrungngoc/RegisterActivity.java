@@ -64,7 +64,6 @@ public class RegisterActivity extends AppCompatActivity {
                                     newUser.setName(edtName.getText().toString().trim());
                                     ref.child(user.getUid()).setValue(newUser);
                                     startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-
                                 } else {
                                     Toast.makeText(RegisterActivity.this, "Create account fail: " + task.toString(),
                                             Toast.LENGTH_SHORT).show();
